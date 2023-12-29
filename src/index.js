@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+//import { BrowserRouter } from 'react-router-dom';
 import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom';
+import { About } from './pages/about';
+import { Terms } from './pages/terms';
+import { Post } from './pages/post';
 
 const router = createBrowserRouter([
   {
@@ -14,17 +18,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <div>This is about page</div>
+    element: <About/>
   },
   {
     path: "/terms",
-    element: <div>This is terms page</div>
+    element: <Terms/>
   },
   {
     path: "/post/:id",
-    element: <div>This is posts page</div>
+    element: <Post/>
   }
 ])
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,12 +1,13 @@
+
 import './App.css';
 import {Header} from "./components/header";
 
 function App() {
-  return (
+  console.log(123);
+  return (<>
     <div className="App">
       <Header />
       <div className="App-header">
-        
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +18,7 @@ function App() {
         </a>
       </div>
     </div>
+    </>
   );
 }
 
